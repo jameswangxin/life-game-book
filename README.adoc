@@ -50,7 +50,7 @@ Mac 先安装 Asciidoctor：
 
 生成 PDF 文件：
 
- $ asciidoctor-pdf -o docs/life-game-book.pdf index.adoc
+$ asciidoctor-pdf -a pdf-theme=./themes/cjk-theme.yml -a pdf-fontsdir="./themes;GEM_FONTS_DIR" -a scripts=cjk -o docs/life-game-book.pdf index.adoc
 
 生成 Epub3 文件：
 
